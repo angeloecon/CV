@@ -1,83 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/syles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <table cellspacing="20">
-    <td><img src="fake-human-circle-img.png" alt=""></td>
-    <td><h1>About Me</h2>
-  <p><em>Founder and CTO of <strong><a href="#">Lorem</a></strong> </em></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis optio alias accusamus? Deserunt, necessitatibus!</p></td>
-  </table>
-  
-  
-  <hr>
-  <h4>Books and Teaching</h4>
-  <ul>
-    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet.</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error.</li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table>
-    <thead>
-      <th>Year</th>
-      <th>Work</th>
-    </thead>
-    <tr>
-      <td>2010-2013</td>
-      <td>Lead Developer</td>
-    </tr>
-    <tr>
-      <td>2010</td>
-      <td>Researcher</td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table  cellspacing="10">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>HTML3</td>
-            <td>&#9733 &#9733 &#9733 &#9733 &#9734</td>
-          </tr>
-          <tr>
-            <td>CSS3</td>
-            <td>&#9733 &#9733 &#9733 &#9734 &#9734</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>&#9733 &#9733 &#9733 &#9734 &#9734</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>Photograpy</td>
-            <td>&#9733 &#9733 &#9733 &#9734 &#9734</td>
-          </tr>
-          <tr>
-            <td>Painting</td>
-            <td>&#9733 &#9733 &#9734 &#9734 &#9734</td>
-          </tr>
-          <tr>
-            <td>Drawing</td>
-            <td>&#9733 &#9733 &#9733 &#9734 &#9734</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">My Hobbies Contact Me</a>
-  <a href="Contact-me.html">Contact Me</a>
+  <section class="title-section">
+    <div class="column-layout">
+      <div class="column column-one">
+        <img class="title-image" src="images/myImage.png" alt="">
+      </div>
+      <div class="column column-two">
+        <h1>Hi, i'm Angelo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel architecto, voluptatum fuga ipsa aspernatur,
+          nobis labore corrupti tempora quisquam quidem dolores voluptas reiciendis, aliquid fugit quo vero quos! Ipsum,
+          enim.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Body container -->
+
+  <section class="body-section container">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+          <ul class="navbar-nav ">
+            <li class="nav-item px-4">
+              <a class="nav-link " href="#">About Me</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">Connect</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <div class="about-me">
+      
+      <h1><i class="fa-solid fa-user"></i> About Me</h1>
+      <h3>Eductional Background</h3>
+
+    <div class="about-me-container">
+      
+
+      <div class="about-me-card">
+        <img src="images/MES.jpg" alt="">
+        <h4>Magallanes Elem. School</h4>
+        <p>Graduated 2022</p>
+      </div>
+
+      <div class="about-me-card">
+        <img src="images/sanhs.jpg" alt="">
+        <h4>Sta Ana National High School</h4>
+        <p>Graduated 2022</p>
+      </div>
+
+      <div class="about-me-card">
+        <img src="images/amashs.png" alt="">
+        <h4>AMA Senior High School</h4>
+        <p>Graduated 2022</p>
+      </div>
+    </div>
+
+    </div>
+
+
+  </section>
 </body>
 
 </html>
